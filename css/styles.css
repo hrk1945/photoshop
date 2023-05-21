@@ -507,13 +507,20 @@ select::-ms-expand {
 .p-mv {
   min-height: 100vh;
   min-height: 100dvh;
+  min-width: 100%;
   position: relative;
+  background-color: pink;
 }
 
 .p-mv__img,
 .p-mv__img img {
-  min-height: 0;
-  min-height: initial;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .p-mv__content {

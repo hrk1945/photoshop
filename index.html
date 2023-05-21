@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
-    <title>タイトル</title>
+    <title>PHOTOSHOP</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!-- OGP -->
-    <meta property="og:title" content="このページのタイトル/ページごとのタイトルにする" />
+    <meta
+      property="og:title"
+      content="このページのタイトル/ページごとのタイトルにする"
+    />
     <meta property="og:site_name" content="サイト名" />
     <meta property="og:description" content="90文字くらい推奨" />
     <meta property="og:type" content="TOPページはwebsite、子ページはarticle" />
@@ -21,71 +24,69 @@
     <link rel="apple-touch-icon" sizes="192x192" href="" />
     <link rel="shortcut icon" sizes="192x192" href="" />
     <!-- ファビコン -->
-    <link rel="icon" href="" />
+    <link rel="icon" href="src/images/common/dummy.jpg" />
     <!-- google font -->
     <!-- js-css -->
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css?ver=1.0.1" />
   </head>
   <body>
-    <div class="l-site-wrapper">
-      <div class="l-inner">
-        <p class="p-test">変更のテスト</p>
-        <a href="#" class="c-btn">ボタン</a>
-      </div>
+    <!-- ヘッダー -->
+    <header class="p-header l-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__logo">
+          <a href="/">
+            <img src="./images/common/logo.svg?ver=1.0.1" alt="" />
+          </a>
+        </h1>
 
-      <!-- ヘッダー -->
-      <header class="p-header l-header">
-        <div class="p-header__inner">
-          <h1 class="p-header__logo">
-            <a href="/">
-              <img src="./images/common/logo.svg?ver=1.0.1" alt="" />
-            </a>
-          </h1>
+        <!-- PCナビ -->
+        <nav class="p-header__pc-nav p-pc-nav">
+          <ul class="p-pc-nav__items">
+            <li class="p-pc-nav__item"><a href="#">お知らせ</a></li>
+            <li class="p-pc-nav__item"><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <!-- ../PCナビ -->
 
-          <!-- PCナビ -->
-          <nav class="p-header__pc-nav p-pc-nav">
-            <ul class="p-pc-nav__items">
-              <li class="p-pc-nav__item"><a href="#">おらせ</a></li>
-              <li class="p-pc-nav__item"><a href="#">お問い合わせ</a></li>
-            </ul>
-          </nav>
-          <!-- ../PCナビ -->
-
-          <div class="p-header__hamburger">
-            <button
-              type="button"
-              id="js-hamburger"
-              class="c-hamburger"
-              aria-controls="js-sp-nav"
-              aria-expanded="false"
-              aria-label="メニューを開閉する"
-            >
-              <span class="c-hamburger__line"></span>
-            </button>
-          </div>
-
-          <!-- SPナビ -->
-          <nav class="p-header__sp-nav p-sp-nav" id="js-sp-nav" aria-hidden="true">
-            <ul class="p-sp-nav__items">
-              <li class="p-sp-nav__item"><a href="#">お知らせ</a></li>
-              <li class="p-sp-nav__item"><a href="#">お問い合わせ</a></li>
-            </ul>
-          </nav>
-          <!-- ../SPナビ -->
+        <div class="p-header__hamburger">
+          <button
+            type="button"
+            id="js-hamburger"
+            class="c-hamburger"
+            aria-controls="js-sp-nav"
+            aria-expanded="false"
+            aria-label="メニューを開閉する"
+          >
+            <span class="c-hamburger__line"></span>
+          </button>
         </div>
-      </header>
-      <!-- ../ヘッダー -->
 
-      <!-- メイン -->
-      <main>
-        <!-- メインビュー -->
-        <div class="p-mv">
-          <div class="p-mv__img">
-            <img src="./images/common/mv.jpg?ver=1.0.1" alt="" />
-          </div>
-          <!-- PC,SPで画像切り替える場合 -->
-          <!-- <picture class="p-mv__img">
+        <!-- SPナビ -->
+        <nav
+          class="p-header__sp-nav p-sp-nav"
+          id="js-sp-nav"
+          aria-hidden="true"
+        >
+          <ul class="p-sp-nav__items">
+            <li class="p-sp-nav__item"><a href="#">お知らせ</a></li>
+            <li class="p-sp-nav__item"><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <!-- ../SPナビ -->
+      </div>
+    </header>
+    <!-- ../ヘッダー -->
+
+    <!-- メイン -->
+    <main>
+      <!-- メインビュー -->
+      <div class="p-mv">
+        <div class="p-mv__img">
+          <img src="./images/common/dummy.jpg" alt="" />
+        </div>
+        <!-- PC,SPで画像切り替える場合 -->
+        <!-- <picture class="p-mv__img">
           <source
             srcset="./images/common/mv_pc.jpg?ver=1.0.1"
             media="(min-width: 768px)"
@@ -95,32 +96,46 @@
             alt=""
           />
         </picture> -->
-          <div class="p-mv__content">
-            <p class="p-mv__title">hiroki</p>
-            <p class="p-mv__text">お客様の夢を叶えるWebサイトを制作</p>
-          </div>
+        <div class="p-mv__content">
+          <p class="p-mv__title">hiroki</p>
+          <p class="p-mv__text">お客様の夢を叶えるWebサイトを制作</p>
         </div>
-        <!-- ../メインビュー -->
-      </main>
-      <!-- ../メイン -->
+      </div>
+      <!-- ../メインビュー -->
+    </main>
+    <!-- ../メイン -->
 
-      <!-- フッター -->
-      <footer class="p-footer l-footer">
-        <div class="p-footer__inner">
-          <div class="p-footer__logo">
-            <a href="/">
-              <img src="./images/common/logo.svg?ver=1.0.1" alt="" />
-            </a>
-          </div>
-          <ul class="p-footer__items">
-            <li class="p-footer__item"><a href="/">トップ</a></li>
-            <li class="p-footer__item"><a href="#">お問い合わせ</a></li>
-          </ul>
-        </div>
-        <div class="p-footer__copy">&copy; 2022</div>
-      </footer>
-      <!-- ../フッター -->
+<!-- セクション1-->
+<section>
+  <div class="p-first__section p-section">
+    <h2 class="c-section__title">
+      タイトル
+    </h2>
+    <div class="p-first__content">
+      <img class="p-first__img" src="./images/common/dummy.jpg" alt="">
     </div>
+    <p class="p-first__text"></p>
+  </div>
+</section>
+<!-- ../セクション1 -->
+
+
+    <!-- フッター -->
+    <footer class="p-footer l-footer">
+      <div class="p-footer__inner">
+        <div class="p-footer__logo">
+          <a href="/">
+            <img src="./images/common/logo.svg?ver=1.0.1" alt="" />
+          </a>
+        </div>
+        <ul class="p-footer__items">
+          <li class="p-footer__item"><a href="/">トップ</a></li>
+          <li class="p-footer__item"><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="p-footer__copy">&copy; 2022</div>
+    </footer>
+    <!-- ../フッター -->
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
